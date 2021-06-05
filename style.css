@@ -28,8 +28,11 @@ body {
   min-height: 100%;
   width: 20rem;
   background-color: rgb(42, 19, 80);
-  position: absolute;
-  left: -30rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: all .3s
 }
 
 .side-bar-top {
@@ -116,6 +119,7 @@ body {
 
 /* Hamburger style */
 .hamburger {
+  position: absolute;
   height: 4rem;
   width: 4rem;
   background-color: rgb(9, 0, 31);
@@ -133,8 +137,11 @@ body {
 
 /* Hamburger clicked class */
 .side-bar-active {
-    position: relative;
-    left: 0;
+  transform: translateX(0);
+}
+
+.hamburger-active {
+  left: 25rem;
 }
 
 /* Modal */

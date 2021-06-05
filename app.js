@@ -11,6 +11,7 @@ const handleHamburger = () => {
   console.log('You clicked me')
   // Add active class to sidebar
   sidebar.classList.toggle('side-bar-active')
+  hamburger.classList.toggle('hamburger-active')
 }
 
 // Functions to handle modal
